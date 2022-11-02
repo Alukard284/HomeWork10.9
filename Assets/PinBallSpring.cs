@@ -16,6 +16,7 @@ public class PinBallSpring : MonoBehaviour
         _springReload -= Time.deltaTime;
         Vector3 targetposition = new Vector3(79.87f, 1.6f, -10f);
         Vector3 startPosition = new Vector3(79.87f, 1.6f, -0.3f);
+        //Вот здесь мне не совсем понятно почему targetposition нельзя назначить напрямую.
         ConfigurableJoint joint = _pinballSpring;
         joint.targetPosition = targetposition;
         if(_springReload <= 9f)
